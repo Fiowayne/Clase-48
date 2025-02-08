@@ -21,10 +21,11 @@ enlace1.textContent = 'Pagina 2'
 
 li1.appendChild(enlace1);
 
-ul.appendChild(li1)
+ul.appendChild(li1);
 
 nav.appendChild(ul); 
 
 header.appendChild(nav);
 
 document.body.prepend(header)
+

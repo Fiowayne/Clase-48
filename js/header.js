@@ -16,6 +16,11 @@ const li2 = document.createElement('li')
 const li3 = document.createElement('li')
 
 const enlace1 = document.createElement('a');
+enlace1.href = '/index.html'
+enlace1.style.textDecoration = 'none'
+enlace1.textContent= 'Inicio'
+
+const enlace2 = document.createElement('a');
 enlace1.href = '/pages/pages2.html'
 enlace1.textContent = 'Pagina 2'
 

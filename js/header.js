@@ -22,14 +22,30 @@ enlace1.style.textDecoration = 'none'
 enlace1.textContent= 'Inicio'
 
 const enlace2 = document.createElement('a');
-enlace1.href = '/pages/pages2.html'
-enlace1.textContent = 'Pagina 2'
+enlace2.href = '/pages/pages2.html'
+enlace2.style.textDecoration = 'none'
+enlace2.textContent = 'Pagina 2'
+
+const enlace3 = document.createElement ('a');
+enlace3.hrref = '#'
+enlace3.style.textDecoration = 'none'
+enlace3.textContent = 'volver atras!'
+
+enlace3.addEventListener('click', (event) => {
+    console.log(window.history)
+    window.history.back();
+})
 
 li1.appendChild(enlace1);
+li2.appendChild(enlace2);
+li3.appendChild(enlace3);
 
 ul.appendChild(li1);
+ul.appendChild(li2);
+ul.appendChild(li3);
 
-nav.appendChild(ul); 
+
+nav.appendChild(ul);
 
 header.appendChild(nav);
 

@@ -1,0 +1,72 @@
+/* Estilos base (aplican a todos los tamaños de pantalla) */
+
+body {
+    font-family: sans-serif;
+    margin: 0; /* Elimina los márgenes predeterminados del body */
+  }
+  
+  .container {
+    width: 90%; /* Ancho del 90% en pantallas pequeñas */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    max-width: 1200px; /* Ancho máximo en pantallas grandes */
+  }
+  
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  p {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  
+  /* Media Queries para ajustar los tamaños */
+  
+  /* Para pantallas más pequeñas que 768px (móviles) */
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 2em; /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+  
+    p {
+      font-size: 1em; /* Reduce el tamaño del párrafo en pantallas pequeñas */
+    }
+  
+    .container {
+      width: 95%; /* Aumenta el ancho del contenedor en pantallas pequeñas */
+    }
+  }
+  
+  /* Para pantallas entre 768px y 991px (tablets) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    h1 {
+      font-size: 2.2em; /* Tamaño intermedio para tablets */
+    }
+  
+    p {
+      font-size: 1.1em; /* Tamaño intermedio para tablets */
+    }
+  
+    .container {
+      width: 92%; /* Ancho ligeramente menor para tablets */
+    }
+  }
+  
+  /* Para pantallas mayores a 992px (desktops) */
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 2.8em; /* Aumenta el tamaño del título en pantallas grandes */
+    }
+  
+    p {
+      font-size: 1.3em; /* Aumenta el tamaño del párrafo en pantallas grandes */
+    }
+  
+    .container {
+      width: 80%; /* Reduce el ancho del contenedor en pantallas grandes */
+    }
+  }
+
+  /* aqui termina el responsive, mas abajo sigue lo otro*/
+
+  

@@ -7,9 +7,10 @@ const nav = document.createElement('nav')
 
 const ul = document.createElement('ul');
 
-ul.styles.listStyle ='none';
-ul.styles.display = 'flex';
-ul.styles.gap = '5px';
+ul.style.listStyle ='none';
+ul.style.display = 'flex';
+ul.style.gap = '5px';
+
 
 const li1 = document.createElement('li')
 const li2 = document.createElement('li')

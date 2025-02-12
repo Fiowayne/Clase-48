@@ -32,7 +32,7 @@ enlace3.style.textDecoration = 'none'
 enlace3.textContent = 'volver atras!'
 
 enlace3.addEventListener('click', (event) => {
-    console.log(window.history)
+    event.preventDefault ();
     window.history.back();
 })
 

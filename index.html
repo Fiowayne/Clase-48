@@ -16,12 +16,32 @@
     <main class="main">
         INDEX.HTML
 
+        <button id="btnRedirigir">ir a pagina 2</button>
+
+        <button id="btnDesactivar">Desactivar evento</button>
+
     </main>
 
     <script src="/js/footer.js"> </script>
     
+    <script>
+
+        const btnRedirigir = document.getElementById('btnRedirigir');
+        const btnDesactivar = document.querySelector('#btnDesactivar');
+
+        function manejarRedirect() {
+            window.location.href ="/pages/pages2.html";
+        }
+    /*vamos a asignar un evento*/
+        btnRedirigir.addEventListener('click', manejarRedirect)
+
+        btnDesactivar.addEventListener('click',()=>{
+
+            btnRedirigir.removeEventListener('click',manejarRedirect)
+            alert("saque el evento de redirigir")
+        })
         
-        
+    </script>       
 
     
 </body>

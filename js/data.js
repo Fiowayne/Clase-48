@@ -12,4 +12,4 @@ window.estrategia = [
 ];
 
 // Mostrar en consola los mejores juegos de estrategia
-console.log("Los 10 mejores juegos de estrategia de todos los tiempos:", mejoresJuegosEstrategia);
+console.log("mejoresJuegosEstrategia");
